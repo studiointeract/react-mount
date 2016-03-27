@@ -1,11 +1,15 @@
 {
-  "name": "react-mount",
+  "name": "react-mount-layout",
   "version": "1.1.0",
   "description": "React Mount lets you mount React components to DOM and FlowRouter easily.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kadirahq/react-mount.git"
+    "url": "https://github.com/kadirahq/react-mount-layout.git"
   },
+  "author": [
+    "timbrandin",
+    "arunoda"
+  ],
   "license": "MIT",
   "options": {
     "mocha": "--require scripts/mocha_runner lib/**/__tests__/**/*.js"
