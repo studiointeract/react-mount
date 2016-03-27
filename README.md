@@ -1,8 +1,8 @@
-# React Mounter
+# React Mount
 
-React Mounter lets you mount React components to DOM easily.
+React Mount lets you mount React components to DOM easily.
 
-> React Mounter supports Server Side Rendering when used with [FlowRouter](https://github.com/kadirahq/flow-router).
+> React Mount supports Server Side Rendering when used with [FlowRouter](https://github.com/kadirahq/flow-router).
 
 Normally, when you are rendering a React Component to the DOM, you need to do following things basically,
 
@@ -10,25 +10,25 @@ Normally, when you are rendering a React Component to the DOM, you need to do fo
 * Wait for the DOM to load properly
 * Then render the component
 
-React Mounter does all these for you. You just ask it to render a component.
+React Mount does all these for you. You just ask it to render a component.
 
-Additionally, React Mounter can work as a simple Layout Manager where you can use with [Flow Router](https://github.com/kadirahq/flow-router).
+Additionally, React Mount can work as a simple Layout Manager where you can use with [Flow Router](https://github.com/kadirahq/flow-router).
 
 ## Basic Usage
 
 Install with:
 
 ```
-npm i --save react-mounter react react-dom
+npm i --save react-mount react react-dom
 ```
 
-> `react` and `react-dom` are peerDependencies of `react-mounter`. So, you need to install them into your app manually.
+> `react` and `react-dom` are peerDependencies of `react-mount`. So, you need to install them into your app manually.
 
 Then let's mount a component.
 
 ```js
 import React from 'react';
-import {mount} from 'react-mounter';
+import {mount} from 'react-mount';
 
 const WelcomeComponent = ({name}) => (<p>Hello, {name}</p>);
 
@@ -37,7 +37,7 @@ mount(WelcomeComponent, {name: 'Arunoda'});
 
 ## Using as a Layout Manager
 
-You can user `react-mounter` as a layout Manager for Flow Router. Here's how to do it.
+You can use `react-mount` as a layout Manager for Flow Router. Here's how to do it.
 
 Let's say we've a layout called MainLayout.
 
@@ -93,10 +93,10 @@ mount(MainLayout, {
 
 ## Configure Root DOM node
 
-By default React Mounter render our components into a DOM node called `react-root`. But, you can configure if by like below:
+By default React Mount render our components into a DOM node called `react-root`. But, you can configure if by like below:
 
 ```js
-const {mount, withOptions} from `react-mounter`;
+const {mount, withOptions} from `react-mount`;
 const mount2 = withOptions({
     rootId: 'the-root',
     rootProps: {'className': 'some-class-name'}
