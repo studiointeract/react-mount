@@ -1,6 +1,6 @@
 # React Mount Layout
 
-React Mount Layout lets you mount React 0.15.x components to DOM and FlowRouter easily.
+React Mount Layout lets you mount React 15.x components to DOM and the Server easily.
 
 > React Mount Layout supports Server Side Rendering when used with [FlowRouter](https://github.com/kadirahq/flow-router).
 
